@@ -21,7 +21,40 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <div className="window window-box-shadow">
+          <div className="window-container">
+            <div className="header">
+              <h1 className="title">SETTINGS</h1>
+              <div className="tools">
+                <a href="#">Fermer</a>
+              </div>
+            </div>
+            <div className="body">
+              <div className="text-center">
+                <input type="text" placeholder="node name" />
+              </div>
+              <h2 className="text-center">
+                Color
+              </h2>
+              <div className="text-center">
+                <div className="item-color" style={{backgroundColor: 'red'}}></div>
+                <div className="item-color" style={{backgroundColor: 'yellow'}}></div>
+                <div className="item-color" style={{backgroundColor: 'green'}}></div>
+                <div className="item-color" style={{backgroundColor: 'blue'}}></div>
+              </div>
+              <h2 className="text-center">
+                Radius
+              </h2>
+              <div className="text-center">
+                <button>&lt;</button>
+                <input type="text" className="text-center" placeholder="0" />
+                <button>&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <Node index={0} deepIndex={8} childs={[]} options={this.options} />
+        
       </div>
     );
   }
