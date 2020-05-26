@@ -1,3 +1,8 @@
+body{
+  background-color: #4d4d4d;
+}
+
+/*** Node ***/
 .node {
   border: 1px solid black;
   background-color: burlywood;
@@ -8,6 +13,34 @@
   display: inline-block;
 }
 
+.node span.btn {
+  display: none;
+}
+.node span.title {
+  display: inline;
+}
+
+.node:hover span.btn {
+  display: inline;
+}
+.node:hover span.title {
+  display: none;
+}
+
+.node .btn-add-node {
+  border-radius: 100%;
+  position: absolute;
+  outline: none;
+}
+
+/* ul {
+  padding-inline-start: 200px;
+} */
+
+
+
+
+/*** WINDOW ***/
 .window {
   border: 1px solid black;
   background-color: rgb(194, 194, 194);
@@ -80,6 +113,10 @@
   display: inline-block;
   margin: 0 20px
 }
+.window .item-color.selected {
+  box-shadow: inset -2px -2px 1px #c2c2c2, inset 2px 2px 1px #c2c2c2;
+}
+
 
 .window input, .window button {
   padding: 5px;
