@@ -13,15 +13,21 @@ body{
   display: inline-block;
 }
 
+.node > div > span {
+  width: 100px;
+  height: 25px;
+  display: inline-block;
+}
+
 .node span.btn {
   display: none;
 }
 .node span.title {
-  display: inline;
+  display: inline-block;
 }
 
 .node:hover span.btn {
-  display: inline;
+  display: inline-block;
 }
 .node:hover span.title {
   display: none;
@@ -38,7 +44,29 @@ body{
 } */
 
 
+.li, .node, .ul{
+  display: inline-block;
+}
 
+.ul .ul {
+  display: block;
+  margin-left: 200px;
+  margin-bottom: 47px;
+}
+.App > .ul {
+  margin-top: 50vh;
+}
+.node {
+  vertical-align: middle;
+}
+
+.links {
+  background-color: rgba(0, 128, 128, 0.24);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
 
 /*** WINDOW ***/
 .window {
